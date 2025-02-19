@@ -9,3 +9,175 @@ main {
 
 
 }
+
+.button {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 117, 140, 0.3);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 117, 140, 0.5);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(255, 117, 140, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  text-align: center;
+  color: #ff6b6b; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff6b6b;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+  
+}
+
+h3:hover {
+  color: #ff6b6b; 
+}
+
+span {
+  font-size: 1.2rem; 
+  font-weight: bold;
+  color: #ff6b6b; 
+  background-color: #f8f9fa;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 2px solid #ff6b6b; 
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+span:hover {
+  background-color: #ff6b6b;
+  color: #fff; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: start; /* Ensures consistent alignment */
+  justify-content: center; /* Centers items */
+  padding: 20px;
+   
+}
+
+.grid-item {
+  /* display: flex; */
+  text-align: center;
+   justify-content: space-between;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.grid-item img {
+  width: 100%;
+  height: 300px; /* Ensures equal height for images */
+  object-fit: cover; /* Prevents stretching */
+  border-radius: 10px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px; /* Adds spacing from content */
+  padding: 10px;
+}
+
+.nav-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  display: flex;
+  gap: 15px; /* Space between buttons */
+}
+.search-container {
+  display: flex;
+  justify-content: center; /* Centering horizontally */
+  align-items: center;
+  margin: 20px 0; /* Space above and below */
+  gap: 10px; /* Space between input and button */
+}
+
+.search-input {
+  width: 300px; /* Adjust width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #2980b9; /* Highlight on focus */
+}
+
+.search-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+}
