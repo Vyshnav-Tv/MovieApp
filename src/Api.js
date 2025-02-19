@@ -3,7 +3,7 @@
 const API_URL ='1e852eabea9a580c25696b2fbe317847';
 const BASE_URL ='https://api.themoviedb.org/3';
 
-export const getMovies =async ( searchTerm,page=1)=>{
+export const getMovies =async ( page=1)=>{
 
 
   
