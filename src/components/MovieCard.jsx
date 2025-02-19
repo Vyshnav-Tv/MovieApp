@@ -5,6 +5,8 @@ import useFavoriteStore from "../StateManagement/useFavoriteStore";
 export default function MovieCard({ movies }){
 
   const { addFavorite, favorites } = useFavoriteStore();
+
+   const isFavorite = favorites.includes(movie.id);
 return(
   <div className="grid-container">
     {movies.map((movie) => (
@@ -16,7 +18,7 @@ return(
         />
         <h3>{movie.title}</h3>
         <button className="button" onClick={() => addFavorite(movie)}>
-          Add To Favorite
+          {{isFavorite ? "Added" : "Add to Favorites"}}
         </button>
       </div>
     ))}
