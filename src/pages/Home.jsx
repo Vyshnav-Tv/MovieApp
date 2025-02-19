@@ -10,9 +10,7 @@ import NavButton from "../components/NavButton";
 export default function Home() {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
- // const [searchTerm, setSearchTerm] = useState("");
-
- // const { addFavorite, favorites } = useFavoriteStore();
+ 
 
   useEffect(() => {
     const fetchData = async () => {
